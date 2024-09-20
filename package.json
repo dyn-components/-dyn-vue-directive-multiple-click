@@ -1,0 +1,45 @@
+{
+  "name": "@vue/directive-multiple-click",
+  "private": true,
+  "version": "0.0.0-alpha.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "build:example": "vue-tsc && vite build",
+    "build:lib": "vue-tsc && vite build --config ./vite-lib.config.ts",
+    "build": "npm run build:lib && npm run build:example"
+  },
+  "dependencies": {
+    "dyn-components": "^0.0.7",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "sass": "^1.77.8",
+    "typescript": "~5.4.0",
+    "unplugin-auto-import": "^0.18.2",
+    "unplugin-vue-components": "^0.27.3",
+    "vite": "^5.3.4",
+    "vite-plugin-dts": "4.0.0-beta.1",
+    "vite-plugin-lib-inject-css": "^2.1.1",
+    "vite-plugin-vue-devtools": "^7.3.6",
+    "vue-tsc": "^2.0.24"
+  },
+  "author": "wuyuedefeng",
+  "description": "多次点击",
+  "homepage": "",
+  "types": "./dist/directive-multiple-click.d.ts",
+  "main": "./dist/directive-multiple-click.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/directive-multiple-click.es.js",
+      "require": "./dist/directive-multiple-click.umd.js"
+    }
+  },
+  "files": [
+    "/dist"
+  ]
+}

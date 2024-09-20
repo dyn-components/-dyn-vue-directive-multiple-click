@@ -1,0 +1,12 @@
+.vscode
+.gitignore
+.publishignore
+/public
+/src
+/App.vue
+/components.d.ts
+/index.html
+/main.ts
+/pnpm-lock.yaml
+/vite*
+/tsconfig*
